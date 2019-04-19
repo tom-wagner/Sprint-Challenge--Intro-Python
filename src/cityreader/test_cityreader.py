@@ -3,10 +3,13 @@ from cityreader import City, cityreader
 
 def check_city(inp, exp):
     if inp.name != exp.name:
+      print('in fail name')
       return False
     if inp.lat != exp.lat:
+      print('in fail lat')
       return False
     if inp.lon != exp.lon:
+      print('in fail lon')
       return False
     return True
 
